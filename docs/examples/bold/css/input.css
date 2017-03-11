@@ -4,6 +4,44 @@
 
 @import '../../../../turret/turret.css';
 
-body {
-  color: red;
+:root {
+
+  /* Borders */
+  --border-width: 3px;
+  --border-radius: 0px;
+
+  /* Colors */
+  --primary: #0081D9;
+  --secondary: #FD4E4E;
+  --tertiary: #FFCC7A;
+  --dark: #252A42;
+
+  /* Font */
+  --font-weight: var(--font-weight-medium);
+
+  /* Headings */
+  --headings-font-weight: var(--font-weight-black);
+
+  /* Buttons */
+  --button-font-weight: var(--font-weight-black);
+  --button-text-transform: uppercase;
+}
+
+.grid {
+
+  @media (--s-up) {
+    
+    @supports (display: grid) {
+      display: grid;
+      grid-gap: var(--space-s);
+      grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    }
+  }
+  
+  @media (--xs) {
+    
+    & article:not(:last-child) {
+      margin-bottom: var(--space-s);
+    }
+  }
 }
