@@ -32,10 +32,13 @@
     "web"
   ],
   "scripts": {
-    "start": "npm run watch",
-    "watch": "npm run docs -- -w",
+    "start": "npm run watch:docs",
+    "watch:docs": "npm run docs -- -w",
+    "watch:examples": "npm run examples -- -w",
     "build": "postcss turret/turret.css -o dist/turret.min.css",
-    "docs": "postcss docs/assets/css/main.css -o docs/dist/docs.css"
+    "docs": "postcss docs/assets/css/main.css -o docs/dist/docs.css",
+    "examples": "npm run examples:bold",
+    "examples:bold": "postcss docs/examples/bold/css/input.css -o docs/examples/bold/css/output.css"
   },
   "devDependencies": {
     "cssnano": "^3.10.0",
