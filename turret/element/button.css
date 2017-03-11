@@ -1,7 +1,10 @@
 button,
 .button {
-  display: inline-block;
-  padding: var(--button-padding-vertical) var(--button-padding-horizontal);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: var(--button-padding-horizontal);
+  padding-right: var(--button-padding-horizontal);
   min-width: var(--button-height);
   height: var(--button-height);
   font-family: var(--button-font-family);
@@ -47,8 +50,6 @@ button,
   }
   
   & svg {
-    width: var(--button-font-size);
-    height: var(--button-font-size);
     fill: var(--button-color);
     @apply --transition;
   }
@@ -235,7 +236,8 @@ button:disabled {
 }
 
 .button-square {
-  padding: var(--button-padding-vertical);
+  padding: 0;
+  width: var(--button-height);
 }
 
 .button-pill {

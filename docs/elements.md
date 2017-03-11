@@ -16,11 +16,25 @@ permalink: /docs/elements/
 Button styles are applied directly to the `<button>` element, button style and size modifiers do not require the button class added to the button element. Button styles can be set on an achor tag by using the .button class.
 
 <div>
+  <button class="button button-square button-s">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="12"></circle>
+    </svg>
+  </button>
+  <a class="button button-square button-s" href="">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="12"></circle>
+    </svg>
+  </a>
+</div>
+
+<hr>
+
+<div>
   <button>Button</button>
 </div>
 
 ```scss
---button-padding-vertical: calc((var(--button-height) - var(--button-font-size) - (var(--button-border-width) * 2)) / 2);
 --button-padding-horizontal: 1.5em;
 --button-height: var(--height-m);
 --button-font-family: inherit;
@@ -293,22 +307,18 @@ A `<svg>` contained within a `button` or `.button` element will inherit the butt
 
 
 ```scss
---button-xl-padding-vertical: calc((var(--button-xl-height) - var(--button-xl-font-size) - (var(--button-border-width) * 2)) / 2);
 --button-xl-padding-horizontal: var(--button-padding-horizontal);
 --button-xl-height: var(--height-xl);
 --button-xl-font-size: var(--font-size-xl);
 
---button-l-padding-vertical: calc((var(--button-l-height) - var(--button-l-font-size) - (var(--button-border-width) * 2)) / 2);
 --button-l-padding-horizontal: var(--button-padding-horizontal);
 --button-l-height: var(--height-l);
 --button-l-font-size: var(--font-size-l);
 
---button-s-padding-vertical: calc((var(--button-s-height) - var(--button-s-font-size) - (var(--button-border-width) * 2)) / 2);
 --button-s-padding-horizontal: var(--button-padding-horizontal);
 --button-s-height: var(--height-s);
 --button-s-font-size: var(--font-size-s);
 
---button-xs-padding-vertical: calc((var(--button-xs-height) - var(--button-xs-font-size) - (var(--button-border-width) * 2)) / 2);
 --button-xs-padding-horizontal: var(--button-padding-horizontal);
 --button-xs-height: var(--height-xs);
 --button-xs-font-size: var(--font-size-xs);
@@ -322,7 +332,7 @@ A `<svg>` contained within a `button` or `.button` element will inherit the butt
 <button class="button button-xs">...</button>
 ```
 
-## Button Anchors
+### Anchors
 
 <div>
   <a class="button button-xl">Extra Large</a>
