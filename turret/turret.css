@@ -4,7 +4,7 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2017 Bigfish
  * http://www.bigfish.tv
  */
@@ -75,6 +75,7 @@
 @import './typography/lead';
 @import './typography/paragraph';
 @import './typography/link';
+@import './typography/strike';
 @import './typography/strong';
 @import './typography/emphasis';
 @import './typography/horizontal-rule';
