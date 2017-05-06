@@ -5,19 +5,19 @@
   width: 100%;
 
   @media (--xl) {
-    max-width: var(--container-xl);
+    max-width: var(--container-r);
   }
 
   @media (--l) {
-    max-width: var(--container-l);
+    max-width: var(--container-r);
   }
 
   @media (--m) {
-    max-width: var(--container-m);
+    max-width: var(--container-r);
   }
-  
+
   @media (--s) {
-    max-width: var(--container-s);
+    max-width: var(--container-r);
   }
 
   @media (--xs) {

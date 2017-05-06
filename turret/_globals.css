@@ -35,6 +35,7 @@
   --container-xl: 90rem;
   --container-l: 80rem;
   --container-m: 70rem;
+  --container-r: 45rem;
   --container-s: 100%;
   --container-xs: 100%;
 
@@ -154,7 +155,7 @@
   --font-family: var(--font-family-system);
   --font-family-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-family-serif: Georgia, "Times New Roman", Times, serif;
+  --font-family-serif: 'Libre Baskerville', Georgia, "Times New Roman", Times, serif;
   --font-family-monospace: Monaco, Menlo, Consolas, "Courier New", monospace;
 
 
