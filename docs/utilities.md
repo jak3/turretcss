@@ -33,6 +33,10 @@ For text and background color utility classes check out the [color](#colors) sec
         <td>Makes element cover it's container using <code>.cover;</code> mixin</td>
       </tr>
       <tr>  
+        <td><code>circle</code></td>
+        <td>Makes element a circle by applying <code>border-radius: 50%;</code></td>
+      </tr>
+      <tr>  
         <td><code>center</code></td>
         <td>Makes element center using <code>.center;</code> mixin</td>
       </tr>
@@ -2191,6 +2195,14 @@ Utility classes can be used to position elements easily, each position utility c
 
 ## Color
 
+<p class="color-inherit">Color Inherit</p>
+<p class="current-color">Current Color</p>
+
+```html
+<p class="color-inherit">Color Inherit</p>
+<p class="current-color">Current Color</p>
+```
+
 <p class="color-white background-black">White</p>
 <p class="color-black">Black</p>
 
@@ -2787,6 +2799,14 @@ Utility classes can be used to position elements easily, each position utility c
 <div class="border-right">...</div>
 <div class="border-bottom">...</div>
 <div class="border-left">...</div>
+```
+
+## Border Radius
+
+<div class="swatch background-light border-radius">Border Radius</div>
+
+```html
+<div class="border-radius">...</div>
 ```
 
 ## Border Color

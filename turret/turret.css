@@ -1,5 +1,5 @@
 /*!
- * turretcss v4.0.2
+ * turretcss v4.0.4
  * http://turretcss.com
  *
  * Licensed under the MIT license.
@@ -134,6 +134,7 @@
 @import './utility/background';
 @import './utility/border';
 @import './utility/color';
+@import './utility/border-radius';
 @import './utility/border-color';
 @import './utility/display';
 @import './utility/fill';
