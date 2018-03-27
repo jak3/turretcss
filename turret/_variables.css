@@ -47,6 +47,7 @@
   --headings-font-weight: var(--font-weight-bold);
   --headings-color: inherit;
   --headings-line-height: var(--line-height-s);
+  --headings-text-align: center;
   --headings-text-transform: none;
   --headings-letter-spacing: var(--letter-spacing);
 
@@ -76,7 +77,7 @@
   /**
    * Display Title
    */
-  
+
   --display-title-margin: 0;
   --display-title-font-family: var(--headings-font-family);
   --display-title-font-weight: var(--headings-font-weight);
@@ -85,12 +86,12 @@
   --display-title-line-height: var(--line-height-xs);
   --display-title-text-transform: uppercase;
   --display-title-letter-spacing: var(--letter-spacing-m);
-  
+
 
   /**
    * Big
    */
-  
+
   --big-margin: 0.5em 0;
   --big-font-family: var(--headings-font-family);
   --big-font-weight: var(--headings-font-weight);
@@ -106,7 +107,7 @@
   /**
    * Small Caps
    */
-  
+
   --small-caps-margin: 1em 0;
   --small-caps-font-family: var(--headings-font-family);
   --small-caps-font-weight: var(--headings-font-weight);
@@ -144,10 +145,10 @@
    * Link
    */
 
-  --link-color: currentColor;
-  --link-text-decoration: underline;
-  --link-hover-color: currentColor;
-  --link-hover-text-decoration: underline;
+  --link-color: var(--info);
+  --link-text-decoration: none;
+  --link-hover-color: var(--info);
+  --link-hover-text-decoration: none;
 
 
   /**
@@ -241,7 +242,7 @@
   --unordered-child-list-icon: disc;
 
 
-  /** 
+  /**
    * Definition List
    */
 
@@ -250,7 +251,7 @@
   --definition-list-font-size: var(--paragraph-font-size);
 
 
-  /** 
+  /**
    * Definition Term
    */
 
@@ -261,7 +262,7 @@
   --definition-term-color: var(--paragraph-color);
 
 
-  /** 
+  /**
    * Definition Description
    */
 
@@ -282,7 +283,7 @@
   --code-color: var(--secondary);
 
 
-  /** 
+  /**
    * Pre
    */
 
@@ -346,7 +347,7 @@
   --form-message-line-height: var(--paragraph-line-height);
 
 
-  /** 
+  /**
    * Field
    */
 
@@ -354,7 +355,7 @@
   --field-float-label-padding: 0.25em;
 
 
-  /** 
+  /**
    * Fieldset
    */
 
@@ -366,7 +367,7 @@
   --fieldset-border-radius: var(--border-radius);
 
 
-  /** 
+  /**
    * Legend
    */
 
@@ -377,7 +378,7 @@
   --legend-color: inherit;
 
 
-  /** 
+  /**
    * Label
    */
 
@@ -389,7 +390,7 @@
   --label-line-height: var(--line-height-m);
 
 
-  /** 
+  /**
    * Input
    */
 
@@ -407,7 +408,7 @@
   --input-border-color: var(--border-color);
   --input-border-radius: var(--border-radius);
   --input-box-shadow: var(--box-shadow);
-  
+
   --input-placeholder-color: var(--input-color);
   --input-placeholder-opacity: 0.5;
 
@@ -426,7 +427,7 @@
   --input-disabled-border-color: var(--input-border-color);
 
 
-  /** 
+  /**
    * Input Sizes
    */
 
@@ -492,7 +493,7 @@
   --select-disabled-border-color: var(--input-disabled-border-color);
 
 
-  /** 
+  /**
    * Select Sizes
    */
 
@@ -528,7 +529,7 @@
   --control-hover-indicator-background: var(--input-hover-background);
   --control-hover-indicator-border-color: var(--input-hover-border-color);
   --control-hover-indicator-box-shadow: var(--input-hover-box-shadow);
-  
+
   --control-focus-indicator-background: var(--input-focus-background);
   --control-focus-indicator-border-color: var(--input-focus-border-color);
   --control-focus-indicator-box-shadow: var(--input-focus-box-shadow);
@@ -559,10 +560,10 @@
   --switch-indicator-border-radius: var(--control-indicator-size);
 
 
-  /** 
+  /**
    * Control Sizes
    */
-  
+
   --control-xl-font-size: var(--font-size-xl);
   --control-xl-indicator-size: 2rem;
 
@@ -576,10 +577,10 @@
   --control-xs-indicator-size: 1rem;
 
 
-  /** 
+  /**
    * Range
    */
-  
+
   --range-margin: var(--input-margin);
   --range-padding: 0;
   --range-height: 0.75rem;
@@ -600,7 +601,7 @@
   --range-thumb-focus-background: var(--input-focus-background);
   --range-thumb-focus-border-color: var(--input-focus-border-color);
   --range-thumb-focus-box-shadow: var(--input-focus-box-shadow);
-  
+
   --range-track-background: var(--input-border-color);
   --range-track-border-width: 0;
   --range-track-border-style: none;
@@ -615,22 +616,22 @@
   --range-track-focus-background: var(--input-focus-border-color);
   --range-track-focus-border-color: none;
   --range-track-focus-box-shadow: var(--input-focus-box-shadow);
-  
 
-  /** 
+
+  /**
    * Range Sizes
    */
-  
+
   --range-xl-height: 1rem;
   --range-l-height: 0.875rem;
   --range-s-height: 0.675rem;
   --range-xs-height: 0.5rem;
 
 
-  /** 
+  /**
    * Progress
    */
-  
+
   --progress-margin: var(--input-margin);
   --progress-height: 1rem;
   --progress-background: var(--input-border-color);
@@ -641,12 +642,12 @@
   --progress-box-shadow: var(--box-shadow);
 
   --progress-bar-background: var(--primary);
-  
 
-  /** 
+
+  /**
    * Progress Sizes
    */
-  
+
   --progress-xl-height: 1.25rem;
   --progress-l-height: 1.125rem;
   --progress-s-height: 0.875rem;
@@ -690,7 +691,7 @@
   --button-block-text-align: center;
 
 
-  /** 
+  /**
    * Button Sizes
    */
 
@@ -715,7 +716,7 @@
   --button-xs-font-size: var(--font-size-xs);
 
 
-  /** 
+  /**
    * Button Shades
    */
 
@@ -726,7 +727,7 @@
   --button-black-color: var(--white);
 
 
-  /** 
+  /**
    * Button Palette
    */
 
@@ -735,7 +736,7 @@
   --button-tertiary-color: var(--white);
 
 
-  /** 
+  /**
    * Button Indicators
    */
 

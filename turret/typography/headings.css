@@ -8,13 +8,14 @@ h4,
 .h4,
 h5,
 .h5,
-h6, 
+h6,
 .h6 {
   margin: var(--headings-margin);
   font-family: var(--headings-font-family);
   font-weight: var(--headings-font-weight);
   color: var(--headings-color);
   line-height: var(--headings-line-height);
+  text-align: var(--headings-text-align);
   text-transform: var(--headings-text-transform);
   letter-spacing: var(--headings-letter-spacing);
 
